@@ -6,11 +6,11 @@ file_list = ["f1.text", "f2.text", 0, 0] #add your own file here to use.
 current_file = file_list [file_number]
 current_file = open(current_file, "r")
 context = current_file.read ()
+key = input ("key: ")
 while True:
     import google.generativeai as genai
     import time
     promptnum = 0
-    key = 'AIzaSyAqsSXE1FJo0XvqDE8pMrVyi6r1K__ruY4'
     model = ''
     error = False
     user_input =''
